@@ -1,25 +1,3 @@
-
-def check(i):
-    match i:
-        case "{":
-            parantheses_state += 1 
-
-
-        case "}":
-            parantheses_state -= 1 
-
-        case "[":
-            brackets_state += 1  
-        
-        case "]":
-            brackets_state += 1  
-
-        case "(":
-            braces_state += 1
-
-        case ")":
-            braces_state -= 1
-
 def isValid(myString):
     parantheses_state = 0 #these are parantheses { and }
     braces_state = 0    #these are braces ( and )
@@ -28,20 +6,14 @@ def isValid(myString):
         match i:
             case "{":
                 parantheses_state += 1 
-
-
             case "}":
                 parantheses_state -= 1 
-
             case "[":
                 brackets_state += 1  
-            
             case "]":
                 brackets_state -= 1  
-
             case "(":
                 braces_state += 1
-
             case ")":
                 braces_state -= 1
 
